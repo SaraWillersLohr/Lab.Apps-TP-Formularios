@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="form.css" rel="stylesheet" type="text/css">
+    <title>Formulario con Slider</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="contenedorForm">
+            <form id="formulario">
+                <div id="caja" class="contenedorItemForm">
+                    <h1>Inscripción: Instituto de Música</h1>
+                    <div class="itemForm">
+                        <label>Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" required>
+                    </div>
+                    <br>
+                    <div class="itemForm">
+                        <label>Apellido: </label>
+                        <input type="text" name="apellido" id="apellido" required>
+                    </div>
+                    <br>
+                    <div class="itemForm">
+                        <label for="gender">Género: </label>
+                        <input type="radio" name="gender" id="masculino" value="Masculino">Masculino
+                        <input type="radio" name="gender" id="femenino" value="Femenino">Femenino
+                    </div>
+                    <br>
+                    <div class="itemForm">
+                        <label>Email: </label><input type="email" name="email" id="email" required>
+                    </div>
+                    <br>
+                    <div class="itemForm">
+                        <label>Fecha de nacimiento: </label><input type="date" name="fecha_nacimiento" id="fecha_nacimiento" required>
+                    </div>
+                    <br>
+                    <div class="itemForm">
+                        <label for="dropdown">Ciudad de nacimiento: </label>
+                        <select id="dropdown" name="ciudad_nacimiento" required>
+                            <option>Buenos Aires</option>
+                            <option>Mar del Plata</option>
+                            <option>Rosario</option>
+                            <option>Córdoba</option>
+                            <option>Rawson</option>
+                            <option>Posadas</option>
+                            <option>Mendoza</option>
+                            <option>Bahía Blanca</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="itemForm">
+                        <label>Edad: </label><input type="number" name="edad" id="edad" required>
+                    </div>
+                    <br>
+                    <h2>A continuación, por favor responda las siguientes preguntas: </h2>
+                    <div class="question">
+                        <label for="time">¿Cuánto tiempo le quiere dedicar al estudio por día?</label><br/>
+                        <input type="range" id="time" name="time" min="0" max="100" step="25" list="values">
+                        <div class="range-labels">
+                            <span>4</span>
+                            <span>6</span>
+                            <span>8</span>
+                            <span>10</span>
+                            <span>12</span>
+                        </div>
+                        <datalist id="values">
+                            <option value="0" label="4"></option>
+                            <option value="25" label="6"></option>
+                            <option value="50" label="8"></option>
+                            <option value="75" label="10"></option>
+                            <option value="100" label="12"></option>
+                        </datalist>
+                    </div>
+                    <div class="question">
+                        <label>¿Qué tipos de música le gustan más?</label>
+                        <br><br>
+                        <input type="checkbox" name="musica" value="Rock">Rock<br>
+                        <input type="checkbox" name="musica" value="Pop">Pop<br>
+                        <input type="checkbox" name="musica" value="Reggaeton">Reggaeton<br>
+                        <input type="checkbox" name="musica" value="Heavy Metal">Heavy Metal<br>
+                        <input type="checkbox" name="musica" value="Rap">Rap<br>
+                        <input type="checkbox" name="musica" value="Soul">Soul<br>
+                        <input type="checkbox" name="musica" value="Reggae">Reggae
+                    </div>
+                    <br>
+                    <div class="itemForm">
+                        <label>¿Qué banda de Rock Nacional considera mejor?</label>
+                        <br><br>
+                        <input type="radio" name="rock_nacional" value="Soda Stereo">Soda Stereo<br>
+                        <input type="radio" name="rock_nacional" value="Divididos">Divididos<br>
+                        <input type="radio" name="rock_nacional" value="Airbag">Airbag<br>
+                        <input type="radio" name="rock_nacional" value="Ciro y los persas">Ciro y los persas<br>
+                        <input type="radio" name="rock_nacional" value="Los piojos">Los piojos<br>
+                        <input type="radio" name="rock_nacional" value="Los abuelos de la nada">Los abuelos de la nada<br>
+                        <input type="radio" name="rock_nacional" value="Serú Girán">Serú Girán
+                    </div>
+                    <br>
+                    <div class="question">
+                        <label>¿Por qué quiere estudiar música?</label>
+                        <input type="text" name="por" id="por" required>
+                    </div>
+                    <br>
+                    <div class="question">
+                        <label>¿Qué color cree que representa mejor al estilo de música Jazz?</label>
+                        <input type="color" name="jazzz">
+                    </div>
+                    <br>
+                    <div class="question">
+                        <label>¿Cuál es el vocalista de la banda Aeroesmith?</label><br>
+                        <input type="radio" name="aeroesmith" value="John Lennon">John Lennon<br>
+                        <input type="radio" name="aeroesmith" value="Steven Tyler">Steven Tyler<br>
+                        <input type="radio" name="aeroesmith" value="Roger Waters">Roger Waters<br>
+                        <input type="radio" name="aeroesmith" value="Anthony Kiedis">Anthony Kiedis
+                    </div>
+                    <br>
+                    <div class="question">
+                        <label>¿En qué banda participó Spinetta?</label>
+                        <select name="bandas">
+                            <option value="ratablanca">Rata Blanca</option>
+                            <option value="seru">Serú Girán</option>
+                            <option value="soda">Soda Stereo</option>
+                            <option value="pescado">Pescado Rabioso</option>
+                            <option value="green">Green Day</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="question">
+                        <label>¿Cuántos años tiene Taylor Swift?</label>
+                        <input type="number" name="edad2" required>
+                    </div>
+                    <div class="question">
+                        <label>Seleccione uno de estos discos: </label>
+                        <div class="imagen">
+                            <img src="foto1.jpg" alt="" id="foto">
+                        </div>
+                        <div class="button">
+                            <input class="radiob" type="radio" name="radio" id="r1">
+                            <input  class="radiob" type="radio" name="radio" id="r2">
+                            <input class="radiob" type="radio" name="radio" id="r3">
+                            <input class="radiob" type="radio" name="radio" id="r4">
+                            <input  class="radiob" type="radio" name="radio" id="r5">
+                            <input class="radiob" type="radio" name="radio" id="r6">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="question">
+                        <label>Basado en su respuesta anterior, mencione algunas canciones de ese disco: </label>
+                        <input type="text" name="disco" required>
+                    </div>
+                    <br>
+                    <h2>Gracias por sus respuestas! Su inscripción se procesará en breve.</h2>
+                    <br>
+                    <input type="submit" value="enviar" id="enviar">
+                    <input type="reset" value="resetear" id="reset">
+                </div>
+            </form>
+        </div>
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

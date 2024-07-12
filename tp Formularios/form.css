@@ -1,0 +1,155 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorForm {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.itemForm, .question {
+    margin-bottom: 15px;
+}
+
+.itemForm label, .question label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.range-labels {
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 0;
+}
+
+.range-labels span {
+    position: relative;
+}
+
+input[type="text"], input[type="email"], input[type="date"], input[type="number"], select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.imagen {
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+.imagen img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.radiob {
+    display: inline-block;
+    margin-right: 15px;
+    
+}
+
+.radiob-container {
+    text-align: center;
+}
+
+.radiob-container input[type="radio"] {
+    margin: 0 10px;
+}
+
+input[type="reset"] {
+    background-color: #170469;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+input[type="reset"]:hover {
+    background-color:#160c42;
+}
+input[type="submit"]:hover {
+    background-color:  #d32f2f;
+}
+
+@media (max-width: 600px) {
+    .contenedorForm {
+        width: 90%;
+    }
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contenedorForm {
+    display: none; /* Oculto por defecto */
+    animation: fadeIn 1s forwards; /* Animación de entrada */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+input:invalid {
+    border: 2px solid rgb(255, 104, 104); 
+}
+
+input:valid {
+    border: 2px solid rgb(101, 196, 101); 
+}
+
+input[type="submit"]:hover {
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
